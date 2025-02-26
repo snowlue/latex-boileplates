@@ -1,0 +1,47 @@
+\begin{titlepage}
+    \begin{center}
+        \ifdefined\logo
+            \logo
+        \else
+            \includegraphics[width=0.18\textwidth]{\currfiledir/itmo_logo.png}
+        \fi\\[10pt]
+        Федеральное государственное автономное образовательное \\ учреждение высшего образования \\[6pt]
+        САНКТ-ПЕТЕРБУРГСКИЙ НАЦИОНАЛЬНЫЙ \\ ИССЛЕДОВАТЕЛЬСКИЙ УНИВЕРСИТЕТ ИТМО \\[16pt]
+        Факультет систем управления и робототехники \vfill
+        {\large \worktype} \\[0.5em]
+        {\large \textbf{\MakeUppercase{\workname}}}\\[0.5em]
+        \ifdefined\varnum
+            Вариант №\varnum
+        \fi
+    \end{center}\vfill
+    \begin{flushright}
+        \ifdefined\students
+            \begin{minipage}{0.3\textwidth}
+                Студенты:\\\students
+                \ifdefined\studystream
+                    \\ Поток: \studystream
+                \fi
+                \ifdefined\groupnumber
+                    \\ Группа: \groupnumber
+                \fi \\[0.5em]
+                Преподаватель: \teachername
+            \end{minipage}
+        \else
+            Студент: \studentname
+            \ifdefined\studystream
+                \\ Поток: \studystream
+            \fi
+            \ifdefined\groupnumber
+                \\ Группа: \groupnumber
+            \fi \\[0.5em]
+            Преподаватель: \teachername
+        \fi
+    \end{flushright}\vfill
+    \begin{center}
+        {\small Санкт-Петербург \\ \ifdefined\copyrightyear \copyrightyear \else \the\year \fi}
+    \end{center}
+\end{titlepage}
+\setcounter{page}{2}
+\ifshowTOC
+    \tableofcontents\newpage
+\fi

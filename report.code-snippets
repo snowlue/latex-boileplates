@@ -1,0 +1,30 @@
+{
+	"New report": {
+		"scope": "latex,tex",
+		"prefix": "/report",
+		"body": [
+			"\\documentclass[a4paper]{article}",
+			"",
+			"\\newcommand{\\worktype}{${1:тип работы}}",
+			"\\newcommand{\\workname}{${2:название работы}}",
+			"\\newcommand{\\teachername}{${3:ФИО преподавателя}}",
+			"\\newcommand{\\studentname}{${4:ФИО автора}}",
+			"\\newcommand{\\students}{${4:ФИО автора} \\\\\\ ${5:ФИО работающих в группе студентов, разделённые \\\\\\\\}}  % опционально",
+			"\\newcommand{\\varnum}{${6:номер варианта}}  % опционально",
+			"\\newcommand{\\studystream}{${7:номер потока}}  % опционально",
+			"\\newcommand{\\groupnumber}{${8:номер группы}}  % опционально",
+			"\\newcommand{\\copyrightyear}{${9:$CURRENT_YEAR}}  % опционально",
+			"\\newcommand{\\logo}{\\includegraphics[width=0.18\\textwidth]{${10:itmo_logo.png}}}  % опционально",
+			"",
+			"\\input{${11:settings.tex}}  % путь к settings.tex",
+			"",
+			"\\showTOCtrue  % опционально",
+			"",
+			"\\begin{document}",
+			"\\input{${12:titlepage.tex}}  % путь к titlepage.tex",
+			"$0",
+			"\\end{document}"
+		],
+		"description": "Quickly creates a new report"
+	},
+}

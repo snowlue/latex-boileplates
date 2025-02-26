@@ -1,0 +1,21 @@
+\documentclass[a4paper]{article}
+
+\newcommand{\worktype}{${WORK_TYPE}}
+\newcommand{\workname}{${WORK_NAME}}
+\newcommand{\teachername}{${TEACHER_NAME}}
+\newcommand{\studentname}{${STUDENT_NAME}}
+\newcommand{\students}{${STUDENT_NAME} \\ ФИО работающих в группе студентов, разделённые \\}  % опционально
+\newcommand{\varnum}{${VARIANT_NUMBER}}  % опционально
+\newcommand{\studystream}{${STUDY_STREAM}}  % опционально
+\newcommand{\groupnumber}{${GROUP_NUMBER}}  % опционально
+\newcommand{\copyrightyear}{${YEAR}}  % опционально
+\newcommand{\logo}{\includegraphics[width=0.18\textwidth]{${LOGO}}  % опционально
+
+\input{settings.tex}  % !!! не забудьте указать корректный путь к settings.tex
+
+\showTOCtrue  % опционально
+
+\begin{document}
+\input{titlepage.tex}  % !!! не забудьте указать корректный путь к titlepage.tex
+
+\end{document}
