@@ -19,10 +19,14 @@
             \begin{minipage}{0.3\textwidth}
                 Студенты:\\\students
                 \ifdefined\studystream
-                    \\ Поток: \studystream
-                \fi
-                \ifdefined\groupnumber
-                    \\ Группа: \groupnumber
+                    \\[0.5em] Поток: \studystream
+                    \ifdefined\groupnumber
+                        \\ Группа: \groupnumber
+                    \fi
+                \else
+                    \ifdefined\groupnumber
+                        \\[0.5em] Группа: \groupnumber
+                    \fi
                 \fi \\[0.5em]
                 Преподаватель: \teachername
             \end{minipage}
